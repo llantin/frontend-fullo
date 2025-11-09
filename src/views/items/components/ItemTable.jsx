@@ -14,7 +14,7 @@ const ItemTable = ({ items = [], onEditItem, onDeleteItem }) => {
             data: null,
             orderable: false,
             render: (data) => {
-                const imageUrl = data.image ? `https://backend-fullo.onrender.com/storage/${data.image}` : '/placeholder-image.png';
+                const imageUrl = data.image ? `https://backend-fullo.onrender.com/imgs/${data.image}` : '/placeholder-image.png';
                 return `<img src="${imageUrl}" alt="${data.name}" class="img-thumbnail" style="width: 60px; height: 60px; object-fit: cover;">`;
             }
         },
