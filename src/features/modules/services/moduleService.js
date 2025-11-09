@@ -6,6 +6,6 @@ export const getModules = async () => {
 };
 
 export const getUserModules = async (roleId) => {
-    const { data } = await api.get(`/get-modules/${roleId}/`);
+    const { data } = await api.get(`/get-modules/${roleId}`);
     return data.modules;
 }
