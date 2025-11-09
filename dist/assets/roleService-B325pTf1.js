@@ -1,0 +1,1 @@
+import{a as e}from"./index-D8RmveFg.js";const r=async()=>{const{data:t}=await e.get("/roles");return t.roles},n=async t=>{const{data:a}=await e.post("/roles",t);return a},c=async(t,a)=>{const{data:s}=await e.put(`/roles/${t}`,a);return s},l=async t=>{const{data:a}=await e.delete(`/roles/${t}`);return a};export{n as c,l as d,r as g,c as u};

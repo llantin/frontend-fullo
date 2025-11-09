@@ -1,0 +1,1 @@
+import{a}from"./index-D8RmveFg.js";const n=async()=>{const{data:s}=await a.get("/users");return s.users},c=async s=>{const{data:t}=await a.post("/users",s);return t},o=async(s,t)=>{const{data:e}=await a.put(`/users/${s}`,t);return e},u=async s=>{const{data:t}=await a.delete(`/users/${s}`);return t};export{c,u as d,n as g,o as u};

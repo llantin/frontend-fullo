@@ -1,0 +1,1 @@
+import{j as o,_ as a,aJ as r}from"./index-D8RmveFg.js";const t=({height:s})=>o.jsxs(o.Fragment,{children:[o.jsx(a,{to:"/",className:"logo-dark",children:o.jsx("img",{src:r,alt:"dark logo",height:s??60})}),o.jsx(a,{to:"/",className:"logo-light",children:o.jsx("img",{src:r,alt:"logo",height:s??60})})]});export{t as A};

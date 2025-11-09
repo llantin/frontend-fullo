@@ -1,0 +1,9 @@
+export const currency = 'S/. ';
+export const currentYear = new Date().getFullYear();
+export const appName = 'Gestión de Inventarios';
+export const appTitle = 'Gestión de Inventarios - Fullo Ferreterías S.A.C.';
+export const appDescription = 'Gestión de Inventarios desarrollado por Fullo Ferreterías S.A.C.';
+export const author = 'Fullo Ferreterías S.A.C.';
+export const authorWebsite = 'https://coderthemes.com/';
+export const authorContact = '';
+export const basePath = '';

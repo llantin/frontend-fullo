@@ -1,0 +1,1 @@
+import{j as t,n as r}from"./index-D8RmveFg.js";import{P as e}from"./PageBreadcrumb-Dw5_9Adg.js";const i=()=>t.jsx(r,{fluid:!0,children:t.jsx(e,{title:"Starter",subtitle:"Pages"})});export{i as default};
