@@ -12,7 +12,7 @@ const AddEditModal = ({ open, toggle, itemData, isEditable, onSave }) => {
     const [units, setUnits] = useState([]);
 
     const schema = yup.object({
-        image: yup.mixed().required('Por favor selecicone la imagen'),
+        image: isEditable ? yup.mixed() : yup.mixed().required('Por favor selecicone la imagen'),
         name: yup.string().required('Por favor ingrese el nombre'),
         description: yup.string().required('Por favor ingrese la descripcion'),
         price: yup.number().typeError('Por favor ingrese un precio válido').required('Por favor ingrese el precio'),
@@ -72,9 +72,7 @@ const AddEditModal = ({ open, toggle, itemData, isEditable, onSave }) => {
                     <Modal.Title>{isEditable ? 'Editar' : 'Crear'} articulo</Modal.Title>
                     <button type="button" className="btn-close" onClick={toggle}></button>
                 </Modal.Header>
-
                 <Modal.Body>
-                    {!isEditable && (
                         <Col md={12} className="mb-3">
                             <FormGroup>
                                 <FormLabel>Imagen de articulo</FormLabel>
@@ -86,7 +84,6 @@ const AddEditModal = ({ open, toggle, itemData, isEditable, onSave }) => {
                                 <Feedback type="invalid">{errors.image?.message}</Feedback>
                             </FormGroup>
                         </Col>
-                    )}
                     <Row>
                         <Col md={12} className="mb-3">
                             <FormGroup>

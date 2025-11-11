@@ -11,7 +11,8 @@ export const createItem = async (itemData) => {
 };
 
 export const updateItem = async (id, updatedData) => {
-    const { data } = await api.put(`/items/${id}`, updatedData);
+    updatedData.append('_method', 'PUT'); // o 'PATCH', ambos sirven
+    const { data } = await api.post(`/items/${id}`, updatedData);
     return data;
 };
 
