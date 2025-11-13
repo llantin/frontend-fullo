@@ -26,14 +26,13 @@ const Index = () => {
               </div>
               <div className="p-4 text-center">
                 <div className="error-text-alt fs-72 text-danger">403</div>
-                <h3 className="fw-bold text-uppercase">Access Denied</h3>
+                <h3 className="fw-bold text-uppercase">Acceso denegado</h3>
                 <p className="text-muted fs-5">
-                  You don't have permission to access this page or perform the requested action.<br />
-                  This may be due to insufficient privileges or restricted access settings.
+                  No tienes permiso para acceder a esta página o realizar la acción solicitada.<br />
+                  Esto puede deberse a privilegios insuficientes o a una configuración de acceso restringido.
                 </p>
                 <div className="mt-4 d-flex justify-content-center gap-1">
-                  <Link className="btn btn-primary" to='/'>Go Home</Link>
-                  <Link to="/" className="btn btn-outline-secondary">Go Back</Link>
+                  <Link className="btn btn-primary" to='/'>Volver al inicio</Link>
                 </div>
               </div>
             </Card>
