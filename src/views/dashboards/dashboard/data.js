@@ -223,7 +223,7 @@ export const orders = async () => {
   const last_movements = await getLastMovements();
   return last_movements.map((movement) => ({
     id: movement.price,
-    userImage: user1,
+    userImage: `https://backend-fullo.onrender.com/${movement.item.image}`,
     userName: movement.user.person.name + " " + movement.user.person.last_name,
     product: movement.item.name,
     subtitleItem: movement.item.brand + " - " + movement.item.model,
