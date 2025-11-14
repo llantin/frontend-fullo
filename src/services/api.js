@@ -6,8 +6,8 @@ const api = axios.create({
         "Content-Type": "application/json",
         "Accept": "application/json",
     },
-    withCredentials: true, // 🔥 CRÍTICO para CORS con credenciales
-    timeout: 30000, // 30 segundos (Render puede tardar si está dormido)
+    withCredentials: true,
+    timeout: 30000,
 });
 
 api.interceptors.request.use((config) => {
