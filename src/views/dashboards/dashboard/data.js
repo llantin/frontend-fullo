@@ -204,7 +204,7 @@ export const products = async () => {
   console.log(items_with_most_movements);
   return items_with_most_movements.map((item) => ({
     id: 1,
-    image: product1,
+    image: `https://backend-fullo.onrender.com/${item.image}`,
     name: item.name,
     subtitleItem: item.brand + " - " + item.model,
     category: 'Audio',
