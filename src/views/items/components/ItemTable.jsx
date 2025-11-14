@@ -74,6 +74,9 @@ const ItemTable = ({ items = [], onEditItem, onDeleteItem }) => {
                 last: ReactDOMServer.renderToStaticMarkup(<TbChevronsRight />),
             },
         },
+        order: [
+            [7, 'desc']
+        ],
         createdRow: (row, data) => {
             const editBtn = row.querySelector('.btn-edit');
             const deleteBtn = row.querySelector('.btn-delete');

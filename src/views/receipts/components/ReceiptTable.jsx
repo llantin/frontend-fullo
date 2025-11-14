@@ -57,6 +57,9 @@ const ReceiptTable = ({ receipts = [], onEditReceipt, onDeleteReceipt }) => {
         last: ReactDOMServer.renderToStaticMarkup(<TbChevronsRight />),
       },
     },
+    order: [
+            [5, 'desc']
+        ],
     createdRow: (row, data) => {
       const editBtn = row.querySelector('.btn-edit');
       const deleteBtn = row.querySelector('.btn-delete');

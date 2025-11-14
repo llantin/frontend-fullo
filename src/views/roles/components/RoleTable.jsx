@@ -56,6 +56,9 @@ const RoleTable = ({ roles = [], onEditRole, onDeleteRole }) => {
                 last: ReactDOMServer.renderToStaticMarkup(<TbChevronsRight />),
             },
         },
+        order: [
+            [3, 'desc']
+        ],
         createdRow: (row, data) => {
             const editBtn = row.querySelector('.btn-edit');
             const deleteBtn = row.querySelector('.btn-delete');

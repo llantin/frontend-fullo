@@ -60,6 +60,9 @@ const MovementTable = ({ movements = [], onDeleteMovement }) => {
         last: ReactDOMServer.renderToStaticMarkup(<TbChevronsRight />),
       },
     },
+    order: [
+            [7, 'desc']
+        ],
     createdRow: (row, data) => {
       const deleteBtn = row.querySelector('.btn-delete');
 

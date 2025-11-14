@@ -53,6 +53,9 @@ const UnitTable = ({ units = [], onEditUnit, onDeleteUnit }) => {
                 last: ReactDOMServer.renderToStaticMarkup(<TbChevronsRight />),
             },
         },
+        order: [
+            [3, 'desc']
+        ],
         createdRow: (row, data) => {
             const editBtn = row.querySelector('.btn-edit');
             const deleteBtn = row.querySelector('.btn-delete');
