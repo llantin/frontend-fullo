@@ -170,5 +170,5 @@ Este proyecto es propiedad de **Fullo Ferreterías S.A.C.** y está desarrollado
 
 ---
 
-**Desarrollado por Fullo Ferreterías S.A.C.**  
+**Desarrollado por Fullo Ferreterías S.A.C.**
 *Sistema de Gestión de Inventarios - Versión 1.0*
