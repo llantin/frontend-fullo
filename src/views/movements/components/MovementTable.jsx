@@ -16,7 +16,14 @@ const MovementTable = ({ movements = [], onDeleteMovement }) => {
     { title: 'Unidad de medida', data: 'unit_measurement' },
     { title: 'Precio', data: 'price' },
     { title: 'Tipo de movimiento', data: 'type' },
-    { title: 'Fecha de registro', data: 'created_at' },
+    {
+      title: 'Fecha de registro',
+      data: 'created_at',
+      render: function (data) {
+        const date = new Date(data);
+        return date.toLocaleDateString('es'); // lo que ve el usuario
+      }
+    },
     {
       title: 'Acciones',
       data: null,
@@ -38,7 +45,7 @@ const MovementTable = ({ movements = [], onDeleteMovement }) => {
     unit_measurement: movement.receipt_detail.unit,
     price: `S/. ${movement.price}`,
     type: movement.type,
-    created_at: new Date(movement.created_at).toLocaleDateString('es'),
+    created_at: movement.created_at,
     id: movement.id,
   }));
 
@@ -61,8 +68,8 @@ const MovementTable = ({ movements = [], onDeleteMovement }) => {
       },
     },
     order: [
-            [7, 'desc']
-        ],
+      [7, 'desc']
+    ],
     createdRow: (row, data) => {
       const deleteBtn = row.querySelector('.btn-delete');
 
